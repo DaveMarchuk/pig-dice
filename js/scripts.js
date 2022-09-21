@@ -30,6 +30,17 @@ Player.prototype.holdDice = function () {
   }
 };
 
-let player1 = new Player("Rafael");
-let player2 = new Player("Oscar");
+// UI Logic
+function handleFormSubmisison(event)  {
+  event.preventDefault();
+  const player1Name = document.querySelector("input#player1-name").value;
+  const player2Name = document.querySelector("ipnut#player2-name").value;
+  let beginNewGame = new Game(player1Name,player2Name);
+  console.log(beginNewGame);
+}
 
+
+window.addEventListener("load", function()  {
+  document.querySelector("form#players-input").addEventListener("submit",handleFormSubmisison);
+  document.querySelector("form#game-interact").addEventListener("submit",); 
+})
