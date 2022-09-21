@@ -7,6 +7,14 @@
 </head>
 <body class="body">
   <h1> Welcome to the Pig Dice Game! </h1>
+  <div class="game-rules">
+    <h2>Game Rules:</h2>
+    <p>Choose a player to go first. That player throws a die and scores as many points as the total shown on the die providing the die doesn’t roll a 1. The player may continue rolling and accumulating points (but risk rolling a 1) or end his turn.
+
+      If the player rolls a 1 his turn is over, he loses all points he accumulated that turn, and he passes the die to the next player.
+      
+      Play passes from player to player until a winner is determined.
+    </p>
   <div class="input-container">
     <h2>Enter in your names! </h2>
     <form id="players-input">
@@ -18,6 +26,12 @@
       <br>
       <button type="submit">Let's play!</button>
     </form>
-  </div>    
+  </div> 
+
+  <div class="game-container">
+    <form id="game-interact">
+      <button type="submit"><strong>ROLL</strong></button>
+      <button type="submit"><strong>HOLD</strong></button>
+    </form>
 </body>
 </html>
